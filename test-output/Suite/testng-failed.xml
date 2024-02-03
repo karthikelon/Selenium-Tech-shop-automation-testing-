@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="GeneralmodulesTest(failed)">
+    <parameter name="Email" value="elon06820@gmail.com"/>
+    <parameter name="Password" value="karthik22"/>
+    <groups>
+      <run>
+        <include name="BookModule"/>
+        <include name="ComputerModule"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.Test.LoginTest">
+        <methods>
+          <include name="desktopmodule" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Test.LoginTest -->
+    </classes>
+  </test> <!-- GeneralmodulesTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
